@@ -1,17 +1,18 @@
 body {
-  padding: 0;
   margin: 0;
 }
 
 nav {
-  background-color: #333;
   display: block;
+  background-color: #333;
+  overflow: hidden;
   height: 70px;
   width: 100%;
   padding: 10px;
 }
 
 nav img {
+  margin-bottom: auto;
   max-width: 100%;
   max-height: 100%;
   border-radius: 50%;
@@ -19,16 +20,24 @@ nav img {
 
 ul {
   float: right;
-  margin-right: 50px;
+  text-align: center;
+  padding-right: 20px;
+  padding-left: 0;
+  margin-top: 0;
+  height: 70px;
   list-style: none;
 }
 
 li {
-  display: inline;
-  margin-right: 20px;
+  float:left;
+  display:block;
+  background:blue;
 }
 
 li a {
+  display: inline-block;
+  min-height: 100%;
+  width: 100px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: none;
   color: white;
@@ -36,5 +45,10 @@ li a {
 
 h1{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-align: center;
+}
+
+.center {
+  position: absolute;
+  padding-left: 50%;
+  width: 300px;
 }
